@@ -105,6 +105,10 @@ module Shippinglogic
                 end
               end
               
+              b.ReturnService do
+                b.Code 11
+              end
+              
               b.Service do
                 b.Code service_type
               end
