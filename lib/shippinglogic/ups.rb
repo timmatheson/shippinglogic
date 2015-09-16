@@ -69,7 +69,8 @@ module Shippinglogic
     end
 
     def ship_accept(attributes = {})
-      @ship_accept ||= ShipAccept.new(self, attributes)
+      #@ship_accept ||= ShipAccept.new(self, attributes)
+      @ship_accept ||= ShipAccept.new(attributes)
     end
 
     def ship(attributes = {})
